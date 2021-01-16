@@ -36,18 +36,6 @@ class BesinListesiVM(application: Application) : BaseViewModel(application) {
 
     fun refreshDataOnline(){
         getDataOnline()
-        //dsadsa
-       /* dsadsadas
-        dsa
-        dsa
-        d
-        sadas
-        dsa
-        d
-        sa
-        d
-        assert(dsa
-        )*/
     }
 
     private fun getDataOffline(){
