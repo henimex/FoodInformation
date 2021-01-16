@@ -1,0 +1,70 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "6bd2e75ed95ce1b4ac762089e3b2c17c",
+    "entities": [
+      {
+        "tableName": "Besin",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uuid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `isim` TEXT, `kalori` TEXT, `karbonhidrat` TEXT, `protein` TEXT, `yag` TEXT, `gorsel` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "uuid",
+            "columnName": "uuid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "besinIsim",
+            "columnName": "isim",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "besinKalori",
+            "columnName": "kalori",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "besinKarbonhidrat",
+            "columnName": "karbonhidrat",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "besinProtein",
+            "columnName": "protein",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "besinYag",
+            "columnName": "yag",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "besinGorsel",
+            "columnName": "gorsel",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uuid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '6bd2e75ed95ce1b4ac762089e3b2c17c')"
+    ]
+  }
+}
