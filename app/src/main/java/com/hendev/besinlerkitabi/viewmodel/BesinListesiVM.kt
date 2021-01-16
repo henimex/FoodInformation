@@ -62,7 +62,6 @@ class BesinListesiVM(application: Application) : BaseViewModel(application) {
                         besinHataMesaji.value = true
                         besinYukleniyor.value = false
                         e.printStackTrace()
-                        e.printStackTrace()
                     }
                 })
         )
