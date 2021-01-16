@@ -31,6 +31,7 @@ class BesinListesiVM(application: Application) : BaseViewModel(application) {
             getDataOffline()
         }else{
             getDataOnline()
+            //veri online alınacak
         }
     }
 
