@@ -32,6 +32,7 @@ class BesinListesiVM(application: Application) : BaseViewModel(application) {
         }else{
             getDataOnline()
             //veri online alınacak
+            
         }
     }
 
