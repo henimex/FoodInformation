@@ -18,6 +18,7 @@ class SpecialSharedPref {
         operator fun invoke(context: Context): SpecialSharedPref = instance ?: synchronized(lock) {
             instance ?: createSpecialSP(context).also {
                 instance = it
+                //dsds da dsa
             }
         }
 
